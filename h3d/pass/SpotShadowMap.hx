@@ -9,7 +9,6 @@ class SpotShadowMap extends Shadows {
 	var mergePass = new h3d.pass.ScreenFx(new h3d.shader.MinMaxShader());
 
 	public function new( light : h3d.scene.Light ) {
-		format = R32F;
 		super(light);
 		lightCamera = new h3d.Camera();
 		lightCamera.screenRatio = 1.0;

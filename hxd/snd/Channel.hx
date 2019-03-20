@@ -94,4 +94,8 @@ class Channel extends ChannelBase {
 	public function stop() {
 		if (manager != null) @:privateAccess manager.releaseChannel(this);
 	}
+
+	public function isReleased() {
+		return manager == null;
+	}
 }
